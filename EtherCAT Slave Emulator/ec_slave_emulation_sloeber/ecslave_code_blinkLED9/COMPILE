@@ -1,0 +1,4 @@
+#
+#	to compile issue a command bellow, fixed according to your configuration
+#	
+make BOARD=uno upload SERIALDEV=/dev/ttyACM0 AVRDUDE=/opt/arduino/hardware/tools/avrdude  ARDUINODIR=/opt/arduino/
