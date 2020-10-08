@@ -17,3 +17,7 @@ software which is free of charge. So, this master software is implemented on a t
 
 The turn table machine is shown in below.
 
+![Turn tisch](https://user-images.githubusercontent.com/48807609/95468115-79dd2f00-097e-11eb-8a3a-d26108aad2ec.PNG)
+
+
+
