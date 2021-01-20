@@ -19,5 +19,12 @@ The turn table machine is shown in below.
 
 ![Turn tisch](https://user-images.githubusercontent.com/48807609/95468115-79dd2f00-097e-11eb-8a3a-d26108aad2ec.PNG)
 
+The projects can be divided in two major parts. One is EtherCAT Master Emulator and another is EtherCAT Slave emulator. 
+
+
+
+
+
+
 
 
