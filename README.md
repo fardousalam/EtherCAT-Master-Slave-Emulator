@@ -19,7 +19,13 @@ The turn table machine is shown in below.
 
 ![Turn tisch](https://user-images.githubusercontent.com/48807609/95468115-79dd2f00-097e-11eb-8a3a-d26108aad2ec.PNG)
 
-The projects can be divided in two major parts. One is EtherCAT Master Emulator and another is EtherCAT Slave emulator. 
+The projects can be divided into two major parts. One is EtherCAT Master Emulator and another is EtherCAT Slave emulator. 
+
+The master Emulator includes Raspberry Pi, IgH EtherCAT Master Software, Turn Table machine which contains Etercat Slave devices. The main task for the master emulater is to emulating EtherCAT Master under a Real time linux system(raspberry Pi real time system) to communicate with the slave devices via EtherCAT. There are four slave devices in the Turn table machine. One is Beckhoff Ethercat Analog device , one is Beckhoff EtherCAT Digital device and two faulhaber motor devices. Here Analog device and Degital devices are configured. The analog slave device is connected to an analog sensor which measures the distance betwenn the sensor and a object(white box as a object in the picture). The degital slave device is connected to a digital sensor where the digital sensor is used to positioning the rotating plate upon which the object lies and moves forward and reverse with the help of conveyer belt. 
+
+As the slave devices are used to collect the real time data which updates automatically over time, we need an real time environment setup before implenting the project. For this reason, a real time patch is installed at first in the raspberry pi. After succesfull compilation of real time patch IgH EtherCAT Software is installed and compilled. Now the configuration can be started. The configuration is done by writing a c program. The "C" programe is written from user space and kernel space both. The Configuration file contains all the configurable variables and functions to configure the slave devics. After succesful configuration the slave devices sent real time data to the master and the developer can see the data in the PC consol.
+
+The slave emulator includes raspberry pi, Light EtherCAT Software, Arduino with peripherals. Just like as the Master emulator the slave emulator also needs real time environment. So first real time patch is installed. Then some reorganization of Light EtherCAT Software was done to adjust with the project. To emulate in the Slave platform some programs are written in C and C++ langauge. This files are basically etherCAT protocol files and configuration files for the slave devices.  
 
 
 
